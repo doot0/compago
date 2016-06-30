@@ -21,6 +21,7 @@ different methods of managing CSS and brings the best of them all together.
   - [Components](#components)
   - [Immutables](#immutables)
 
+
 - [Influences](#influences)
 
 ---
@@ -35,13 +36,26 @@ having to do so yourself.
 
 ### Usage
 
+###### Customisation
+Any given layer of Compago can be added or removed at will. However, regardless
+of the structure you decide on, you should order your styles in specifity order,
+like [ITCSS](http://csswizardry.net/talks/2014/11/itcss-dafed.pdf) would have
+you do.
+
+###### Assumptions
+Compago assumes that you'll be writing in SCSS. This is *not* a requirement;
+you could use LESS, SASS, Stylus, or even vanilla CSS (it is recommended
+that you use a pre-processor or at the very least, a minifier) so long as you
+add and remove layers from Compago where necessary.
+
+###### Style composure
 As long as you're not writing an [atomic](#atomics) or a [generic](#generics),
 you should use [BEM](#bem) to compose your styles.
 
+###### Variables & private variables
 A good starting point would be the `config/_vars` file. You should place all
 your variables that you'll need global access to in here.
 
-###### Private variables
 In some cases, you will need to define private variables on a per-file basis.
 You should try and avoid using too many of these as they will make your
 components less re-usable.
@@ -51,7 +65,7 @@ components less re-usable.
 ### Documentation
 
 ##### Structure
-The structure of compago is as follows.
+The structure of Compago is as follows.
 
 ```
 compago/
@@ -72,42 +86,43 @@ Included with compago is a `.scss-lint.yml` file for use with [scss-lint](https:
 ##### Configuration
 Located in `/configuration/*.scss`
 
+You should place variables for your project in the folder.
 
 
 ##### Utilities
 Located in `/utils/*.scss`
 
-
+Mixins and functions that consume the configs.
 
 ##### Generics
 Located in `/generics/*.scss`
 
-
+Resets, third party libs
 
 ##### Base
 Located in `/base/*.scss`
 
-
+Element styles e.g. h1, h2, h3, p, ul etc
 
 ##### Atomics
 Located in `/atomics/*.scss`
 
-
+Atomic, SRP (single responsibility principle) style classes
 
 ##### Objects
 Located in `/objects/*.scss`
 
-
+Re-usable UI patterns
 
 ##### Components
 Located in `/components/*.scss`
 
-
+Bespoke UI implementations
 
 ##### Immutables
 Located in `/immutables/*.scss`
 
-
+Stuff with !important in it
 
 ---
 
