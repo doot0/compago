@@ -209,6 +209,9 @@ An almost painfully simple example:
 A class of `i-hidden` should absolutely hide the element you apply it to every
 single time. This is an example of proactive usage of `!important`.
 
+Regardless, you should keep usage of immutables to a minimum. There shouldn't
+be too many use cases for immutables but they're important nonetheless.
+
 ---
 
 ### Influences
