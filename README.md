@@ -143,7 +143,7 @@ Attaching styles to base elements can severely reduce their re-usability.
 ##### Atomics
 > `/atomics/*.scss` - *Atomic style classes, without the terseness*
 
-**Namespace:** `a-`
+*Namespace:* `a-`
 
 This is where you should write classes that do one thing and one thing only.
 It is a good idea to generate your atomics based on the contents of your
@@ -153,7 +153,7 @@ folder.
 ##### Objects
 > `/objects/*.scss` - *Re-usable UI patterns*
 
-**Namespace:** `o-`
+*Namespace:* `o-`
 
 Objects represent a repeatable UI pattern that should work in any given
 context, regardless of its scope. You should author objects with immutability
@@ -168,7 +168,7 @@ object class without worrying about it affecting the base object.
 ##### Components
 > `/components/*.scss` - *Bespoke UI implementations*
 
-**Namespace:** `c-`
+*Namespace:* `c-`
 
 Components are bespoke, implementation-specific pieces of UI. In most cases,
 you should use component classes to structure the layout of a given piece of
@@ -187,7 +187,7 @@ An example:
 ##### Immutables
 > `/immutables/*.scss` - *Stuff with `!important` in it.*
 
-**Namespace:** `i-`
+*Namespace:* `i-`
 
 It's pretty common knowledge that using `!important` is bad practice, as it
 is a very ham-fisted way of ensuring that a property does exactly what you
