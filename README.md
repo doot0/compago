@@ -81,6 +81,10 @@ One added bonus you get from namespacing your classnames is that while you are
 authoring your UI, most auto-complete features in editors will hint all classes
 belonging to a given namespace.
 
+An additional namespace you might like to add could be a theming namespace,
+indicated by a `t-` prefix. A theme layer would be added after the component
+layer.
+
 ##### Structure
 The structure of Compago is as follows.
 
@@ -237,5 +241,3 @@ very re-usable, but doesn't come close to the re-usability of
 ##### ITCSS
 The structure of this framework is greatly influenced by Harry Roberts'
 [ITCSS](http://csswizardry.net/talks/2014/11/itcss-dafed.pdf).
-
----
